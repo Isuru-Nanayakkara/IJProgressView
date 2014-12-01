@@ -27,8 +27,6 @@ ProgressView.shared.hideProgressView()
 * Allow customization.
 * Support landscape orientation.
 
-
-======================================================================================
 ## Credits
 
 * [Eranga Bandara](https://coderwall.com/itseranga)
