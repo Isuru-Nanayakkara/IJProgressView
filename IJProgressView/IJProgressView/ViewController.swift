@@ -12,14 +12,25 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        IJProgressView.shared.showProgressView(view)
+        
+        setCloseTimer()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func close() {
+        IJProgressView.shared.hideProgressView()
     }
-
-
+    
+    func setCloseTimer() {
+        let timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "close", userInfo: nil, repeats: false)
+    }
+    
+    @IBAction func showButtonTapped(sender: UIButton) {
+        IJProgressView.shared.showProgressView(view)
+        
+        setCloseTimer()
+    }
+    
 }
 
