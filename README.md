@@ -3,8 +3,6 @@ IJProgressView
 
 A simple progress view written in Swift.
 
-The original code was take from my friend Eranga's [Coderwall](https://coderwall.com/p/su1t1a). It had some issues so I modified it. My plan is to keep improving it.
-
 <img src="https://raw.githubusercontent.com/Isuru-Nanayakkara/IJProgressView/master/demo.gif" height="426" width="240" >
 
 ## Usage
@@ -29,4 +27,4 @@ IJProgressView.shared.hideProgressView()
 
 ## Credits
 
-* [Eranga Bandara](https://coderwall.com/itseranga)
+* [Eranga Bandara](https://twitter.com/itseranga) is the original author of the [code snippet](https://coderwall.com/p/su1t1a).
