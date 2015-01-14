@@ -1,4 +1,4 @@
-Swift ProgressView
+IJProgressView
 ==================
 
 A simple progress view written in Swift.
@@ -11,12 +11,12 @@ The original code was take from my friend Eranga's [Coderwall](https://coderwall
 Simply call the following method to show the progress view. Pass the view you want it to be overlayed as a parameter.
 
 ```
-ProgressView.shared.showProgressView(view)
+IJProgressView.shared.showProgressView(view)
 ```
 To hide the progress view,
 
 ```
-ProgressView.shared.hideProgressView()
+IJProgressView.shared.hideProgressView()
 ```
 
 
