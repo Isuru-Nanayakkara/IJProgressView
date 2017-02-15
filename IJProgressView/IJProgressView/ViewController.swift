@@ -23,10 +23,10 @@ class ViewController: UIViewController {
     }
     
     func setCloseTimer() {
-        let timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "close", userInfo: nil, repeats: false)
+        _ = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(close), userInfo: nil, repeats: false)
     }
     
-    @IBAction func showButtonTapped(sender: UIButton) {
+    @IBAction func showButtonTapped(_ sender: UIButton) {
         IJProgressView.shared.showProgressView(view)
         
         setCloseTimer()
