@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         setCloseTimer()
     }
 
-    func close() {
+    @objc func close() {
         IJProgressView.shared.hideProgressView()
     }
     
