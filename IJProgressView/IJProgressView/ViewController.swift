@@ -9,13 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // IJProgressView.shared.showProgressView(view)
-        
-       // setCloseTimer()
+        IJProgressView.shared.showProgressView()
+        setCloseTimer()
     }
 
     @objc func close() {
@@ -27,9 +26,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showButtonTapped(_ sender: UIButton) {
-       // IJProgressView.shared.showProgressView(view)
-         IJProgressView.shared.showProgressView()
+        IJProgressView.shared.showProgressView()
         setCloseTimer()
+    }
+    
+    @IBAction func leftButtonTapped(_ sender: UIBarButtonItem) {
+        print(#function)
+    }
+    
+    @IBAction func rightButtonTapped(_ sender: UIBarButtonItem) {
+        print(#function)
     }
     
 }

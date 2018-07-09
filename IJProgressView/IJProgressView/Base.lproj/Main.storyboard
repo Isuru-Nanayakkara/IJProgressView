@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WVB-dD-Gd4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WVB-dD-Gd4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,11 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqm-mj-z0T">
-                                <rect key="frame" x="16" y="431" width="568" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqm-mj-z0T">
+                                <rect key="frame" x="16" y="431" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="BOt-c4-6AL"/>
+                                    <constraint firstAttribute="height" constant="40" id="shW-lE-naj"/>
                                 </constraints>
                                 <state key="normal" title="Show">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,13 +38,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.71454939449999999" green="1" blue="0.67225112970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pqm-mj-z0T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2NG-ng-BEQ"/>
-                            <constraint firstAttribute="centerX" secondItem="pqm-mj-z0T" secondAttribute="centerX" id="7Tj-J9-ArD"/>
-                            <constraint firstAttribute="centerY" secondItem="pqm-mj-z0T" secondAttribute="centerY" constant="-146" id="MhN-xc-62c"/>
-                            <constraint firstItem="pqm-mj-z0T" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vdT-kB-Us5"/>
+                            <constraint firstItem="pqm-mj-z0T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="117.5" id="HHG-tr-lUA"/>
+                            <constraint firstItem="pqm-mj-z0T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LGB-Jv-O1W"/>
+                            <constraint firstItem="pqm-mj-z0T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="nxK-Ou-a9q"/>
+                            <constraint firstAttribute="trailing" secondItem="pqm-mj-z0T" secondAttribute="trailing" constant="16" id="o79-Fe-Pkh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YVl-LE-Bmt"/>
+                    <navigationItem key="navigationItem" id="YVl-LE-Bmt">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="cj6-ce-eQa">
+                            <connections>
+                                <action selector="leftButtonTapped:" destination="BYZ-38-t0r" id="qOc-dW-und"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Right" id="nvs-HR-4F3">
+                            <connections>
+                                <action selector="rightButtonTapped:" destination="BYZ-38-t0r" id="gvh-tl-JzO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +77,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCY-C6-5Qh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-396" y="54"/>
+            <point key="canvasLocation" x="-442" y="36"/>
         </scene>
     </scenes>
 </document>
