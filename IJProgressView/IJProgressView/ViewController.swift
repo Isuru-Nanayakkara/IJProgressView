@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        IJProgressView.shared.showProgressView(view)
+       // IJProgressView.shared.showProgressView(view)
         
-        setCloseTimer()
+       // setCloseTimer()
     }
 
     @objc func close() {
@@ -27,8 +27,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showButtonTapped(_ sender: UIButton) {
-        IJProgressView.shared.showProgressView(view)
-        
+       // IJProgressView.shared.showProgressView(view)
+         IJProgressView.shared.showProgressView()
         setCloseTimer()
     }
     
