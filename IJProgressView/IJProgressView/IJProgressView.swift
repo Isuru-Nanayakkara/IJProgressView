@@ -9,7 +9,7 @@
 import UIKit
 
 open class IJProgressView {
-    static let shared = IJProgressView()
+    public static let shared = IJProgressView()
     
     var containerView = UIView()
     var progressView = UIView()
