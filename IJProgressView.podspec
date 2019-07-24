@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'IJProgressView'
-  spec.version = '1.0.1'
+  spec.version = '1.2.0'
   spec.summary = 'A simple progress view written in Swift.'
   spec.homepage = 'https://github.com/Isuru-Nanayakkara/IJProgressView'
   spec.license = 'MIT'
