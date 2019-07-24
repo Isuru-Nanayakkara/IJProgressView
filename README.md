@@ -32,9 +32,6 @@ IJProgressView.shared.hideProgressView()
 ```
 
 
-## Known Bugs
-* When the view controller is embedded inside a `UINavigationController`, the overlay view doesn't cover the navigation bar.
-
 ## Todo
 * Allow customization.
 * Support landscape orientation.
