@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D360940922E8672E00012053 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D360940822E8672E00012053 /* TabBarViewController.swift */; };
+		D360940B22E868DC00012053 /* WithNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D360940A22E868DC00012053 /* WithNavBarViewController.swift */; };
+		D360940D22E868EE00012053 /* WithoutNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D360940C22E868EE00012053 /* WithoutNavBarViewController.swift */; };
 		D3D0E4BC1A66D8B70091429E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0E4BB1A66D8B70091429E /* AppDelegate.swift */; };
-		D3D0E4BE1A66D8B70091429E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0E4BD1A66D8B70091429E /* ViewController.swift */; };
 		D3D0E4C11A66D8B70091429E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D0E4BF1A66D8B70091429E /* Main.storyboard */; };
 		D3D0E4C31A66D8B70091429E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D0E4C21A66D8B70091429E /* Images.xcassets */; };
 		D3D0E4C61A66D8B70091429E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D0E4C41A66D8B70091429E /* LaunchScreen.xib */; };
@@ -27,10 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D360940822E8672E00012053 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D360940A22E868DC00012053 /* WithNavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithNavBarViewController.swift; sourceTree = "<group>"; };
+		D360940C22E868EE00012053 /* WithoutNavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutNavBarViewController.swift; sourceTree = "<group>"; };
 		D3D0E4B61A66D8B70091429E /* IJProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IJProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D0E4BA1A66D8B70091429E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D0E4BB1A66D8B70091429E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3D0E4BD1A66D8B70091429E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3D0E4C01A66D8B70091429E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3D0E4C21A66D8B70091429E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3D0E4C51A66D8B70091429E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -81,7 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				D3D0E4BB1A66D8B70091429E /* AppDelegate.swift */,
-				D3D0E4BD1A66D8B70091429E /* ViewController.swift */,
+				D360940822E8672E00012053 /* TabBarViewController.swift */,
+				D360940A22E868DC00012053 /* WithNavBarViewController.swift */,
+				D360940C22E868EE00012053 /* WithoutNavBarViewController.swift */,
 				D3D0E4BF1A66D8B70091429E /* Main.storyboard */,
 				D3D0E4DB1A66DD5D0091429E /* IJProgressView.swift */,
 			);
@@ -161,25 +167,25 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Appex;
 				TargetAttributes = {
 					D3D0E4B51A66D8B70091429E = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = H4TYCSEM4B;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 					};
 					D3D0E4CA1A66D8B70091429E = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 95GU92RU65;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						TestTargetID = D3D0E4B51A66D8B70091429E;
 					};
 				};
 			};
 			buildConfigurationList = D3D0E4B11A66D8B70091429E /* Build configuration list for PBXProject "IJProgressView" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -221,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D360940922E8672E00012053 /* TabBarViewController.swift in Sources */,
+				D360940D22E868EE00012053 /* WithoutNavBarViewController.swift in Sources */,
+				D360940B22E868DC00012053 /* WithNavBarViewController.swift in Sources */,
 				D3D0E4DC1A66DD5D0091429E /* IJProgressView.swift in Sources */,
-				D3D0E4BE1A66D8B70091429E /* ViewController.swift in Sources */,
 				D3D0E4BC1A66D8B70091429E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -277,12 +286,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -322,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -330,12 +342,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -373,8 +387,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lk.appex.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -387,8 +400,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lk.appex.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -409,8 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lk.appex.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IJProgressView.app/IJProgressView";
 			};
 			name = Debug;
@@ -428,8 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lk.appex.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IJProgressView.app/IJProgressView";
 			};
 			name = Release;

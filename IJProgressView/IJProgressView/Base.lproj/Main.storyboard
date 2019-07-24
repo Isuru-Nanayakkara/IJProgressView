@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WVB-dD-Gd4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lxZ-QC-Nvn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar View Controller-->
+        <scene sceneID="89g-eT-rWE">
+            <objects>
+                <tabBarController id="lxZ-QC-Nvn" customClass="TabBarViewController" customModule="IJProgressView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YbE-ZT-If0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="80F-3k-1x3" kind="relationship" relationship="viewControllers" id="Iz0-kW-JCN"/>
+                        <segue destination="AC6-nE-w7Y" kind="relationship" relationship="viewControllers" id="Pds-Os-Qs9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iaA-Ft-IUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1345" y="112"/>
+        </scene>
+        <!--With Nav Bar View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IJProgressView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WithNavBarViewController" customModule="IJProgressView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqm-mj-z0T">
-                                <rect key="frame" x="16" y="431" width="343" height="40"/>
+                                <rect key="frame" x="16" y="313.5" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="shW-lE-naj"/>
@@ -32,52 +50,92 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="showButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ib0-WD-SHm"/>
+                                    <action selector="showButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7v7-Tp-a3f"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.71454939449999999" green="1" blue="0.67225112970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pqm-mj-z0T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="117.5" id="HHG-tr-lUA"/>
-                            <constraint firstItem="pqm-mj-z0T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LGB-Jv-O1W"/>
                             <constraint firstItem="pqm-mj-z0T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="nxK-Ou-a9q"/>
                             <constraint firstAttribute="trailing" secondItem="pqm-mj-z0T" secondAttribute="trailing" constant="16" id="o79-Fe-Pkh"/>
+                            <constraint firstItem="pqm-mj-z0T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wZc-ny-bqp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YVl-LE-Bmt">
                         <barButtonItem key="leftBarButtonItem" title="Left" id="cj6-ce-eQa">
                             <connections>
-                                <action selector="leftButtonTapped:" destination="BYZ-38-t0r" id="qOc-dW-und"/>
+                                <action selector="leftButtonTapped:" destination="BYZ-38-t0r" id="leX-Az-JCa"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Right" id="nvs-HR-4F3">
                             <connections>
-                                <action selector="rightButtonTapped:" destination="BYZ-38-t0r" id="gvh-tl-JzO"/>
+                                <action selector="rightButtonTapped:" destination="BYZ-38-t0r" id="jmH-I1-evU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="389.60000000000002" y="36.431784107946029"/>
+            <point key="canvasLocation" x="-1484" y="918"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="uUd-DE-rPm">
+        <!--Without Nav Bar-->
+        <scene sceneID="YYJ-WZ-vLJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WVB-dD-Gd4" sceneMemberID="viewController">
+                <viewController id="AC6-nE-w7Y" customClass="WithoutNavBarViewController" customModule="IJProgressView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JmN-bz-Xy1"/>
+                        <viewControllerLayoutGuide type="bottom" id="eeS-H4-h9W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9VX-fQ-5JD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUh-v9-x1Y">
+                                <rect key="frame" x="16" y="313.5" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Dm-Q8-U2e"/>
+                                </constraints>
+                                <state key="normal" title="Show">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showButtonTapped:" destination="AC6-nE-w7Y" eventType="touchUpInside" id="EBP-Fw-S8i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92120724919999997" green="0.84832113980000001" blue="0.62377804520000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FUh-v9-x1Y" firstAttribute="leading" secondItem="9VX-fQ-5JD" secondAttribute="leading" constant="16" id="HHr-YU-epN"/>
+                            <constraint firstItem="FUh-v9-x1Y" firstAttribute="centerY" secondItem="9VX-fQ-5JD" secondAttribute="centerY" id="dbt-CB-8K1"/>
+                            <constraint firstAttribute="trailing" secondItem="FUh-v9-x1Y" secondAttribute="trailing" constant="16" id="qJC-Yo-Mhh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Without Nav Bar" id="Epb-wp-jGi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dst-Mm-61s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495" y="918"/>
+        </scene>
+        <!--With Nav Bar-->
+        <scene sceneID="vJC-N6-5Tm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="80F-3k-1x3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="With Nav Bar" id="j34-ch-cvw"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hfF-Oc-nNO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oa1-aE-D0k">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vxC-B3-IDL"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="udg-wx-tCW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JCY-C6-5Qh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P03-07-Cwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-442" y="36"/>
+            <point key="canvasLocation" x="-2287" y="917"/>
         </scene>
     </scenes>
 </document>
