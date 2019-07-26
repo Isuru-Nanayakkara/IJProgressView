@@ -31,11 +31,6 @@ To hide the progress view,
 IJProgressView.shared.hideProgressView()
 ```
 
-
-## Todo
-* Allow customization.
-* Support landscape orientation.
-
 ## Credits
 
 * [Eranga Bandara](https://twitter.com/itseranga) is the original author of the [code snippet](https://coderwall.com/p/su1t1a).
