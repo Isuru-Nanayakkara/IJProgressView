@@ -103,6 +103,7 @@ open class IJProgressView {
             for constraint in self.activeConstraints {
                 constraint.isActive = false
             }
+            self.activeConstraints.removeAll()
         }
     }
 }
