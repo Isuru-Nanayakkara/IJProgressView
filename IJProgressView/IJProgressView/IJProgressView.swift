@@ -15,27 +15,45 @@ open class IJProgressView {
     var progressView = UIView()
     var activityIndicator = UIActivityIndicatorView()
     
+    public var backgroundColor = UIColor(hex: 0xffffff, alpha: 0.3)
+    public var forgroundColor = UIColor(hex: 0x444444, alpha: 0.7)
+    public var size = CGSize(width: 80, height: 80)
+
     open func showProgressView() {
-        let window = UIWindow(frame: UIScreen.main.bounds)
+        guard let topView = UIApplication.shared.keyWindow?.rootViewController?.view else {
+            return
+        }
         
-        containerView.frame = window.frame
-        containerView.center = window.center
-        containerView.backgroundColor = UIColor(hex: 0xffffff, alpha: 0.3)
-        
-        progressView.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
-        progressView.center = window.center
-        progressView.backgroundColor = UIColor(hex: 0x444444, alpha: 0.7)
+        containerView.backgroundColor = self.backgroundColor
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+
+        progressView.backgroundColor = self.forgroundColor
         progressView.clipsToBounds = true
         progressView.layer.cornerRadius = 10
-        
-        activityIndicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        progressView.translatesAutoresizingMaskIntoConstraints = false
+
         activityIndicator.style = .whiteLarge
-        activityIndicator.center = CGPoint(x: progressView.bounds.width / 2, y: progressView.bounds.height / 2)
-        
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+
+        UIApplication.shared.keyWindow?.addSubview(containerView)
         progressView.addSubview(activityIndicator)
         containerView.addSubview(progressView)
-        UIApplication.shared.keyWindow?.addSubview(containerView)
-        
+
+        containerView.heightAnchor.constraint(equalTo: topView.heightAnchor).isActive = true
+        containerView.widthAnchor.constraint(equalTo: topView.widthAnchor).isActive = true
+        containerView.leadingAnchor.constraint(equalTo: topView.leadingAnchor).isActive = true
+        containerView.topAnchor.constraint(equalTo: topView.topAnchor).isActive = true
+
+        progressView.heightAnchor.constraint(equalToConstant: self.size.height).isActive = true
+        progressView.widthAnchor.constraint(equalToConstant: self.size.width).isActive = true
+        progressView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        progressView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
+
+        activityIndicator.heightAnchor.constraint(equalToConstant: self.size.height/2).isActive = true
+        activityIndicator.widthAnchor.constraint(equalToConstant: self.size.width/2).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: progressView.centerYAnchor).isActive = true
+        activityIndicator.centerXAnchor.constraint(equalTo: progressView.centerXAnchor).isActive = true
+
         activityIndicator.startAnimating()
     }
     
