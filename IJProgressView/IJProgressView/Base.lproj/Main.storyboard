@@ -53,30 +53,60 @@
                                     <action selector="showButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7v7-Tp-a3f"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="27" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="VvI-cr-McX">
+                                <rect key="frame" x="128" y="385" width="162" height="30"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="27" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="BKN-MV-gt9">
+                                <rect key="frame" x="128" y="422" width="118" height="30"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="27" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Ql0-zx-mTk">
+                                <rect key="frame" x="128" y="459" width="118" height="30"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0HR-Tq-wFr">
+                                <rect key="frame" x="14" y="497.5" width="347" height="31"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.71454939449999999" green="1" blue="0.67225112970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ql0-zx-mTk" secondAttribute="trailing" constant="16" id="4ht-pe-dqd"/>
+                            <constraint firstItem="VvI-cr-McX" firstAttribute="top" secondItem="pqm-mj-z0T" secondAttribute="bottom" constant="30" id="BLP-20-aE5"/>
+                            <constraint firstAttribute="trailing" secondItem="BKN-MV-gt9" secondAttribute="trailing" constant="16" id="Fwd-4f-RKo"/>
+                            <constraint firstItem="Ql0-zx-mTk" firstAttribute="top" secondItem="BKN-MV-gt9" secondAttribute="bottom" constant="8" id="Khy-Yw-OAZ"/>
+                            <constraint firstItem="0HR-Tq-wFr" firstAttribute="top" secondItem="Ql0-zx-mTk" secondAttribute="bottom" constant="8" id="ORD-eZ-Mm0"/>
+                            <constraint firstAttribute="trailing" secondItem="VvI-cr-McX" secondAttribute="trailing" constant="16" id="ZGC-We-yad"/>
+                            <constraint firstItem="BKN-MV-gt9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="dxQ-tW-cUX"/>
+                            <constraint firstItem="BKN-MV-gt9" firstAttribute="top" secondItem="VvI-cr-McX" secondAttribute="bottom" constant="8" id="fCM-P8-zC5"/>
+                            <constraint firstItem="Ql0-zx-mTk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="fUV-di-khk"/>
+                            <constraint firstItem="VvI-cr-McX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="jNN-c5-82m"/>
                             <constraint firstItem="pqm-mj-z0T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="nxK-Ou-a9q"/>
                             <constraint firstAttribute="trailing" secondItem="pqm-mj-z0T" secondAttribute="trailing" constant="16" id="o79-Fe-Pkh"/>
+                            <constraint firstItem="0HR-Tq-wFr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="vbs-zv-9ju"/>
                             <constraint firstItem="pqm-mj-z0T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wZc-ny-bqp"/>
+                            <constraint firstAttribute="trailing" secondItem="0HR-Tq-wFr" secondAttribute="trailing" constant="16" id="xqa-NR-qrB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YVl-LE-Bmt">
-                        <barButtonItem key="leftBarButtonItem" title="Left" id="cj6-ce-eQa">
+                        <barButtonItem key="leftBarButtonItem" title="Smaller" id="cj6-ce-eQa">
                             <connections>
                                 <action selector="leftButtonTapped:" destination="BYZ-38-t0r" id="leX-Az-JCa"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Right" id="nvs-HR-4F3">
+                        <barButtonItem key="rightBarButtonItem" title="Bigger" id="nvs-HR-4F3">
                             <connections>
                                 <action selector="rightButtonTapped:" destination="BYZ-38-t0r" id="jmH-I1-evU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="alphaSlider" destination="0HR-Tq-wFr" id="1oa-a4-ovE"/>
+                        <outlet property="blueSlider" destination="Ql0-zx-mTk" id="8TL-1D-Nbe"/>
+                        <outlet property="greenSlider" destination="BKN-MV-gt9" id="UMk-9h-0Jl"/>
+                        <outlet property="redSlider" destination="VvI-cr-McX" id="IPf-dk-pkh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1484" y="918"/>
+            <point key="canvasLocation" x="-1484" y="917.99100449775119"/>
         </scene>
         <!--Without Nav Bar-->
         <scene sceneID="YYJ-WZ-vLJ">
