@@ -31,6 +31,13 @@ To hide the progress view,
 IJProgressView.shared.hideProgressView()
 ```
 
+## Contributors
+
+* [Peter Keller](https://github.com/petekeller2)
+* [choioi](https://github.com/choioi)
+* [twodayslate](https://github.com/twodayslate)
+
+
 ## Credits
 
 * [Eranga Bandara](https://twitter.com/itseranga) is the original author of the [code snippet](https://coderwall.com/p/su1t1a).
